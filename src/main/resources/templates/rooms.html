@@ -5,6 +5,18 @@
     <title>Title</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <th>Room</th>
+            <th>Name</th>
+            <th>Bed Info</th>
+        </tr>
 
+        <tr th:each="room:${rooms}">
+            <td th:text="${room.number}">Room</td>
+            <td th:text="${room.name}">Room</td>
+            <td th:text="${room.bedInfo}">Room</td>
+        </tr>
+    </table>
 </body>
 </html>
